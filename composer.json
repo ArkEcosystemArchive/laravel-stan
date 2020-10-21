@@ -9,7 +9,7 @@
             "email": "hello@basecode.sh"
         }
     ],
-    "require-dev": {
+    "require": {
         "ergebnis/composer-normalize": "^2.8",
         "ergebnis/phpstan-rules": "^0.15",
         "friendsofphp/php-cs-fixer": "^2.16",
