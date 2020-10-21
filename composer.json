@@ -31,7 +31,8 @@
         "psalm/plugin-laravel": "^1.4",
         "rector/rector": "^0.8",
         "spatie/pest-plugin-snapshots": "^0.3.1",
-        "vimeo/psalm": "^4.0"
+        "vimeo/psalm": "^4.0",
+        "jasonmccreary/laravel-test-assertions": "^1.0"
     },
     "extra": {
         "laravel": {
