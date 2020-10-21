@@ -29,6 +29,7 @@ class StanServiceProvider extends ServiceProvider
             __DIR__.'/../.php_cs'      => base_path('.php_cs'),
             __DIR__.'/../phpstan.neon' => base_path('phpstan.neon'),
             __DIR__.'/../psalm.xml'    => base_path('psalm.xml'),
+            __DIR__.'/../phpunit.xml'  => base_path('phpunit.xml'),
         ], 'config');
 
         $this->publishes([
