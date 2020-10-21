@@ -1,7 +1,7 @@
 {
     "name": "arkecosystem/stan",
-    "description": "Static Analysis & Testing for Laravel. Powered by PHPStan, Psalm and Pest.",
     "type": "library",
+    "description": "Static Analysis & Testing for Laravel. Powered by PHPStan, Psalm and Pest.",
     "license": "MIT",
     "authors": [
         {
@@ -13,6 +13,7 @@
         "ergebnis/composer-normalize": "^2.8",
         "ergebnis/phpstan-rules": "^0.15",
         "friendsofphp/php-cs-fixer": "^2.16",
+        "fzaninotto/faker": "^1.9",
         "graham-campbell/analyzer": "^3.0",
         "johnkary/phpunit-speedtrap": "^3.2",
         "mockery/mockery": "^1.3",
@@ -29,18 +30,19 @@
         "phpunit/phpunit": "^9.3",
         "psalm/plugin-laravel": "^1.4",
         "rector/rector": "^0.8",
+        "spatie/pest-plugin-snapshots": "^0.3.1",
         "vimeo/psalm": "^4.0"
-    },
-    "autoload": {
-        "psr-4": {
-            "ARKEcosystem\\Stan\\": "src/"
-        }
     },
     "extra": {
         "laravel": {
             "providers": [
                 "ARKEcosystem\\Stan\\StanServiceProvider"
             ]
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "ARKEcosystem\\Stan\\": "src/"
         }
     },
     "minimum-stability": "dev",
