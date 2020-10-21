@@ -8,7 +8,7 @@
 
 ## Installation
 
-1. Require with composer: `composer require arkecosystem/stan`
+1. Require with composer: `composer require arkecosystem/stan --dev`
 2. Publish all configurations with `php artisan vendor:publish --provider="ARKEcosystem\Stan\StanServiceProvider" --tag=config`.
 3. Publish all workflows with `php artisan vendor:publish --provider="ARKEcosystem\Stan\StanServiceProvider" --tag=workflows`.
 4. Start tweaking the configurations as needed for your project.
