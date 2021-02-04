@@ -4,7 +4,7 @@
     <img src="./banner.png" />
 </p>
 
-> Static Analysis & Testing for Laravel. Powered by PHPStan, Psalm and Pest.
+> Static Analysis & Testing for Laravel. Powered by PHPStan and Pest.
 
 ## Installation
 

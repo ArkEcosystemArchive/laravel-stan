@@ -6,7 +6,7 @@ namespace ARKEcosystem\Stan;
 
 use Illuminate\Support\ServiceProvider;
 
-class StanServiceProvider extends ServiceProvider
+final class StanServiceProvider extends ServiceProvider
 {
     /**
      * Bootstrap any application services.
@@ -28,7 +28,6 @@ class StanServiceProvider extends ServiceProvider
         $this->publishes([
             __DIR__.'/../.php_cs'      => base_path('.php_cs'),
             __DIR__.'/../phpstan.neon' => base_path('phpstan.neon'),
-            __DIR__.'/../psalm.xml'    => base_path('psalm.xml'),
             __DIR__.'/../phpunit.xml'  => base_path('phpunit.xml'),
         ], 'config');
 
