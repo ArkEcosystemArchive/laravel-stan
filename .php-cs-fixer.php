@@ -2,7 +2,10 @@
 
 declare(strict_types=1);
 
-    $rules = [
+use PhpCsFixer\Config;
+use PhpCsFixer\Finder;
+
+$rules = [
     'array_syntax' => ['syntax' => 'short'],
     'binary_operator_spaces' => [
         'default' => 'single_space',
@@ -165,7 +168,7 @@ declare(strict_types=1);
     'whitespace_after_comma_in_array' => true,
 ];
 
-$finder = PhpCsFixer\Finder::create()
+$finder = Finder::create()
     ->notPath('bootstrap')
     ->notPath('storage')
     ->notPath('vendor')
@@ -178,8 +181,7 @@ $finder = PhpCsFixer\Finder::create()
     ->ignoreDotFiles(true)
     ->ignoreVCS(true);
 
-$config = new PhpCsFixer\Config();
-return $config
+return (new Config())
     ->setFinder($finder)
     ->setRules($rules)
     ->setRiskyAllowed(true)
