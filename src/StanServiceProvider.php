@@ -26,7 +26,7 @@ final class StanServiceProvider extends ServiceProvider
     public function registerPublishers(): void
     {
         $this->publishes([
-            __DIR__.'/../.php_cs'      => base_path('.php_cs'),
+            __DIR__ . '/../.php-cs-fixer.php' => base_path('.php-cs-fixer.php'),
             __DIR__.'/../phpstan.neon' => base_path('phpstan.neon'),
             __DIR__.'/../phpunit.xml'  => base_path('phpunit.xml'),
         ], 'config');
